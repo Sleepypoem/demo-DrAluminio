@@ -20,13 +20,12 @@ function moveLeft() {
 
 function moveRight() {
     offset += carouselItemWidth + gap;
-    carouselContainer.style.transform = `translateX(-${offset}px)`
-    console.log(offset);
 
     if (offset >= carouselContainer.offsetWidth - 30) {
-        carouselContainer.style.transform = "translateX(0)";
         offset = 0;
+
     }
+    carouselContainer.style.transform = `translateX(-${offset}px)`
 }
 
 leftButton.addEventListener("click", moveLeft);
