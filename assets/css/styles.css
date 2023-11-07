@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dedede;
+}
+
+nav {
+  height: 70px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo .logo-text {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Muli";
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  font-family: "Poppins";
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links .cart-icon {
+  color: #000;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 0;
+  -webkit-text-stroke: 0.7px;
+}
+
+.cart-icon {
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  left: 20px;
+  bottom: 12px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.main-carousel {
+  display: block;
+  width: 545px;
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-container {
+  display: flex;
+  position: absolute;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+  transition: 1s transform ease;
+}
+
+.main-carousel-item {
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  display: block;
+
+  height: 300px;
+  width: 525px;
+}
+
+.carousel-item-text {
+  font-size: 4rem;
+  font-family: "Poppins";
+  font-weight: 900;
+}
+
+.carousel-left,
+.carousel-right {
+  border: none;
+  position: absolute;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 0;
+  background-color: rgba(218, 217, 181, 0.185);
+  color: rgba(15, 15, 15, 0.384);
+  bottom: calc(100% / 2 - 35px);
+}
+
+.carousel-left {
+  z-index: 1;
+  left: 20px;
+}
+
+.carousel-right {
+  right: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(410px, 250px));
+  padding: 30px;
+  justify-content: center;
+  margin-left: auto;
+  gap: 20px;
+  margin-right: auto;
+}
+
+.product {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-options {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px;
+  top: 0;
+  background-color: #06070e3d;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.2s all ease-in;
+}
+
+.product-options i {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  background-color: #fff;
+  font-size: 2.5rem;
+  line-height: 1.8;
+  vertical-align: 0 !important;
+  display: block;
+  color: #000;
+}
+
+.product :hover.product-options {
+  opacity: 1;
+}
+
+footer {
+  width: 95vw;
+  min-width: 600px;
+  display: grid;
+  gap: 40px;
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 30px;
+}
+
+.social-networks {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.social-networks h3 {
+  font-size: 2.5rem;
+  font-family: "Poppins";
+  font-weight: 900;
+}
+
+.logos {
+  display: flex;
+  gap: 20px;
+}
+
+.social-network-logo img {
+  display: block;
+  width: 100px;
+}
+
+.contact-section {
+  display: grid;
+}
+
+.contact-info {
+  font-size: 1.5rem;
+  font-family: "Muli";
+}
+
+.contact-info i {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.payments-supported {
+  width: 50%;
+}
+
+.payments-supported img {
+  width: 100%;
+}
